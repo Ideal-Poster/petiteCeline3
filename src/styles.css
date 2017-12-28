@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+:host {
+  display: block;
+  background: url("./assets/background-large.png")no-repeat 50% 50% fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+}
