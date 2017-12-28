@@ -1,9 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
 :host {
   display: block;
-  background: url("./assets/background-large.png")no-repeat 50% 50% fixed;
+  background: url("./assets/background-large.png")no-repeat 0% 0% fixed;
   background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
+  min-height:  100vh;
+}
+
+.petite-celine {
+  position: absolute;
+  left: 120px;
+  top: 37%;
+  width: 365px;
+  height: 186px;
+  color: #8e9262;
+  font-family: Cardo;
+  font-size: 134px;
+  font-weight: 400;
+  line-height: 90px;
 }
