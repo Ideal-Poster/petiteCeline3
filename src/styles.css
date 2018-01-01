@@ -25,13 +25,13 @@ h1, .h1 {
   /* margin-bottom: 1.2631579em; */
 }
 h2, .h2 {
-  font-size: 1.79166667em;
+  font-size: 1.777em;
   line-height: 1.6744186em;
-  margin-top: 0.8372093em;
-  margin-bottom: 0.8372093em;
+  /* margin-top: 0.8372093em; */
+  /* margin-bottom: 0.8372093em; */
 }
 h3, .h3 {
-  font-size: 1.33333333em;
+  font-size: 1.3125em;
   line-height: 1.125em;
   margin-top: 1.125em;
   margin-bottom: 0em;
@@ -56,6 +56,7 @@ ul ul, ol ol, ul ol, ol ul {
   margin-top: 0em;
   margin-bottom: 0em;
 }
+
 /* Let's make sure all's aligned */
 hr, .hr {
   border: 1px solid;
@@ -80,4 +81,26 @@ li {
   margin-left: -42px;
   font-size: 16px;
   margin-bottom: -10px;
+}
+
+
+@media only screen and (min-width : 480px) {
+}
+@media only screen and (min-width : 768px) {
+}
+@media only screen and (max-width : 768px) {
+  .col-centered{
+    float: none;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width : 768px) {
+}
+@media only screen and (min-width : 992px) {
+  .young-soldier {
+    width: 280px;
+    background: grey;
+  }
+}
+@media only screen and (min-width : 1200px) {
 }
