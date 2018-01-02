@@ -1,13 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppComponent } from './app.component';
-import { AlbumContentComponent } from "./album-content/album-content.component";
-
+import { AppComponent } from './app.component'
+;
 @NgModule({
   declarations: [
-    AppComponent,
-    AlbumContentComponent
+    AppComponent
   ],
   imports: [
     BrowserModule
