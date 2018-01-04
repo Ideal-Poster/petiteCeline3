@@ -20,13 +20,21 @@
   line-height: 50px;
   font-size: 3.157em;
   opacity: 0.94;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
 }
 
 .title {
   display: inline;
   font-size: 1.333em;
   font-family: Cardo;
+}
+
+.rectangle {
+  display: inline-block;
+  width: 11px;
+  height: 25px;
+  background-color: #179a9c;
+  margin-right: 24px;
 }
 
 .title-rectangle {
@@ -38,18 +46,43 @@ li, p, .fa {
   color: #4f5555;
 }
 
+.track-padding {
+  padding-left: 15px;
+}
+
+.video-wrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.video-wrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
 /* Custom, iPhone Retina */
-@media only screen and (min-width: 320px) {}
+@media only screen and (min-width: 320px) {
+  .title {
+    /* background: purple; */;
+  }
+}
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width: 480px) {}
 
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
+  .module {
+    padding-top: 14px;
+  }
   .petite-celine {
     line-height: 67px;
     font-size: 4.209em;
-    top: 155px;
+    top: 200px;
   }
 }
 
@@ -58,9 +91,16 @@ li, p, .fa {
   .petite-celine {
     font-size: 5.61em;
     line-height: 90px;
+    top: 155px;
   }
   .title {
     font-size: 1.777em;
+  }
+  .rectangle {
+    height: 37px;
+  }
+  .module {
+    padding-top: 0px;
   }
 }
 
