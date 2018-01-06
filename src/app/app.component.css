@@ -2,6 +2,24 @@
   font-family: "Josefin Sans";
 }
 
+.background h1,
+.background h2,
+.background h3,
+.background h4,
+.background h5,
+.background p {
+  color: #c9c9c9;
+}
+
+.events-section h1,
+.events-section h2,
+.events-section h3,
+.events-section h4,
+.events-section h5,
+.events-section p {
+  color: #212023;
+}
+
 .background {
   background: url("../assets/background-large.png") 50% 50%;
   background-size: cover;
@@ -9,8 +27,7 @@
   -o-background-size: cover;
   -webkit-background-size: cover;
   min-height: 100vh;
-  padding-top: 64px;
-  padding-bottom: 70px;
+  padding-top: 104px;
 }
 
 .petite-celine {
@@ -21,6 +38,10 @@
   font-size: 3.157em;
   opacity: 0.94;
   padding-bottom: 50px;
+}
+
+.album {
+  margin-bottom: 20px;
 }
 
 .title {
@@ -34,7 +55,7 @@
   width: 11px;
   height: 25px;
   background-color: #179a9c;
-  margin-right: 24px;
+  margin-right: 18px;
 }
 
 .title-rectangle {
@@ -42,7 +63,7 @@
   margin-left: -45px;
 }
 
-li, p, .fa {
+li, .fa {
   color: #4f5555;
 }
 
@@ -51,30 +72,52 @@ li, p, .fa {
 }
 
 .video-wrapper {
-	position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
-	padding-top: 25px;
-	height: 0;
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0;
 }
+
 .video-wrapper iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.events-section {
+  padding-top: 64px;
+  padding-bottom: 80px;
+  color: #212023;
+  background: #e7d9eb;
+}
+
+.event {
+  padding-bottom: -30px;
+  border-bottom: 1px solid #e695cc;;
+}
+
+.live-event {
+  padding-bottom: 40px;
+}
+
+.location {
+  font-weight: 300;
+  top: -10px;
 }
 
 /* Custom, iPhone Retina */
-@media only screen and (min-width: 320px) {
-  .title {
-    /* background: purple; */;
-  }
-}
+
+@media only screen and (min-width: 320px) {}
 
 /* Extra Small Devices, Phones */
+
 @media only screen and (min-width: 480px) {}
 
 /* Small Devices, Tablets */
+
 @media only screen and (min-width: 768px) {
   .module {
     padding-top: 14px;
@@ -84,20 +127,28 @@ li, p, .fa {
     font-size: 4.209em;
     top: 200px;
   }
+  @media only screen and (min-height: 964px) {
+    .background {
+      height: 984px;
+      min-height: 0px;
+    }
+  }
 }
 
 /* Medium Devices, Desktops */
+
 @media only screen and (min-width: 992px) {
   .petite-celine {
     font-size: 5.61em;
     line-height: 90px;
-    top: 155px;
+    top: 141px;
   }
   .title {
     font-size: 1.777em;
   }
   .rectangle {
     height: 37px;
+    margin-right: 24px;
   }
   .module {
     padding-top: 0px;
@@ -105,4 +156,5 @@ li, p, .fa {
 }
 
 /* Large Devices, Wide Screens */
+
 @media only screen and (min-width: 1200px) {}
