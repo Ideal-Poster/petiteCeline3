@@ -1,0 +1,26 @@
+.events-section h1,
+.events-section h2,
+.events-section h3,
+.events-section h4,
+.events-section h5,
+.events-section p {
+  color: #212023;
+}
+
+.event {
+  padding-bottom: -30px;
+  margin-bottom: 35px;
+}
+
+.live-event {
+  padding-bottom: 40px;
+}
+
+.event-title {
+  color: #000;
+}
+
+.location {
+  font-weight: 300;
+  top: -10px;
+}

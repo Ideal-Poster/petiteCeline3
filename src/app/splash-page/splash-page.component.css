@@ -1,0 +1,128 @@
+.background h1, .background h2, .background h3, .background h4, .background h5, .background p {
+  color: #c9c9c9;
+}
+
+.background {
+  background: url("../../assets/background-large.png") 50% 50%;
+  background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  min-height: 100vh;
+  padding-top: 12.5vh;
+  padding-bottom: 73px;
+}
+
+.petite-celine {
+  position: relative;
+  width: 205px;
+  font-family: Cardo;
+  line-height: 50px;
+  font-size: 3.157em;
+  opacity: 0.94;
+  padding-bottom: 50px;
+}
+
+.album {
+  margin-bottom: 35px;
+}
+
+.title {
+  display: inline;
+  font-size: 1.333em;
+  font-family: Cardo;
+}
+
+.rectangle {
+  display: inline-block;
+  width: 11px;
+  height: 25px;
+  background-color: #179a9c;
+  margin-right: 18px;
+}
+
+.title-rectangle {
+  display: relative;
+  margin-left: -45px;
+}
+
+li, .fa {
+  color: #4f5555;
+}
+
+.track-padding {
+  padding-left: 15px;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Custom, iPhone Retina */
+
+@media only screen and (min-width: 320px) {}
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (min-width: 480px) {}
+
+/* Small Devices, Tablets */
+
+@media only screen and (min-width: 768px) {
+  .module {
+    padding-top: 6px;
+  }
+  .petite-celine {
+    line-height: 67px;
+    font-size: 4.209em;
+    top: 186px;
+  }
+  .album {
+    margin-bottom: 40px;
+  }
+  /* @media only screen and (min-height: 964px) {
+    .background {
+      height: 984px;
+      min-height: 0px;
+    }
+  } */
+}
+
+/* Medium Devices, Desktops */
+
+@media only screen and (min-width: 992px) {
+  .petite-celine {
+    font-size: 5.61em;
+    line-height: 90px;
+    top: 141px;
+  }
+  .title {
+    font-size: 1.777em;
+  }
+  .rectangle {
+    height: 37px;
+    margin-right: 24px;
+  }
+  .module {
+    padding-top: 0px;
+  }
+  .album {
+    margin-bottom: 34px;
+  }
+}
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (min-width: 1200px) {}

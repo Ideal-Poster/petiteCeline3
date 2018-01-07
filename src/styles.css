@@ -11,54 +11,28 @@ body, .article {
   -webkit-font-smoothing: antialiased;
 }
 
-/* h1, h2, h3, h4, h5, p, .petite-celine {
-  color: #c9c9c9;
-} */
-
 h1, .h1 {
   font-size: 2.375em;
-  /* line-height: 1.26315789em; */
-  /* margin-top: 0.63157895em; */
-  /* margin-bottom: 1.2631579em; */
 }
 
 h2, .h2 {
   font-size: 1.777em;
-  /* line-height: 1.6744186em; */
-  /* margin-top: 0.8372093em; */
-  /* margin-bottom: 0.8372093em; */
 }
 
 h3, .h3 {
   font-size: 1.3125em;
-  /* line-height: 1.125em; */
-  /* margin-top: 1.125em; */
-  /* margin-bottom: 0em; */
 }
 
 h4, .h4 {
   font-size: 1em;
-  /* line-height: 1.5em; */
-  /* margin-top: 1.5em; */
-  /* margin-bottom: 0em; */
 }
 
 h5, .h5 {
   font-size: 1em;
-  /* line-height: 10.5em; */
-  /* margin-top: 1.5em; */
-  /* margin-bottom: 0em; */
 }
 
 p, ul, ol, pre, table, blockquote {
-  margin-top: 0em;
-  margin-bottom: 1.5em;
   font-size: 16px;
-}
-
-ul ul, ol ol, ul ol, ol ul {
-  margin-top: 0em;
-  margin-bottom: 0em;
 }
 
 hr, .hr {

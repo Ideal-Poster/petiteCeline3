@@ -1,0 +1,13 @@
+.footer {
+  padding-top: 254px;
+  color: #a5a7a7;
+}
+
+.social-media {
+  padding-top: 50px;
+}
+
+.social-media li {
+  font-weight: 300;
+  /* padding-bottom: -7px; */
+}
