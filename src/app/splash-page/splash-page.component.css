@@ -70,6 +70,16 @@ li, .fa {
   height: 100%;
 }
 
+.fixed-container {
+  position: fixed;
+  padding-bottom: 80px;
+  bottom: 0vh;
+  left: 0;
+  right: 0;
+  text-align: center;
+  height: 20px;
+}
+
 /* Custom, iPhone Retina */
 
 @media only screen and (min-width: 320px) {}

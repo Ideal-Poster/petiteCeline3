@@ -1,6 +1,10 @@
 .footer {
   padding-top: 254px;
-  color: #a5a7a7;
+  color: #a4a4a4;
+}
+
+.footer, .footer a{
+  color: #a4a4a4;
 }
 
 .social-media {
