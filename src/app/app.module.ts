@@ -4,8 +4,10 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
 import { SplashPageComponent } from './splash-page/splash-page.component';
-import { EventsPageComponent } from './events-page/events-page.component'
-;
+import { EventsPageComponent } from './events-page/events-page.component';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,7 +16,8 @@ import { EventsPageComponent } from './events-page/events-page.component'
     EventsPageComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
