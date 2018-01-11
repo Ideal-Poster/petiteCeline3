@@ -1,7 +1,6 @@
 .background h1, .background h2, .background h3, .background h4, .background h5, .background p {
   color: #c9c9c9;
 }
-
 .background {
   background: url("../../assets/background-large.png") 50% 50%;
   background-size: cover;
@@ -12,27 +11,41 @@
   padding-top: 12.5vh;
   padding-bottom: 73px;
 }
-
+.title, .rectangle, .track, .album-title, .music-video, .petite, .celine {
+  opacity: 0;
+}
+@-webkit-keyframes appear {
+  0% { opacity: 0; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
 .petite-celine {
   position: relative;
   width: 205px;
   font-family: Cardo;
-  line-height: 50px;
   font-size: 3.157em;
   opacity: 0.94;
   padding-bottom: 50px;
 }
 
+.petite {
+  -webkit-animation: appear 1000ms ease forwards;
+  margin-bottom: -43px;
+}
+.celine {
+  -webkit-animation: appear 1000ms ease forwards;
+  animation-delay: 20ms;
+}
 .album {
   margin-bottom: 35px;
 }
-
 .title {
   display: inline;
   font-size: 1.333em;
   font-family: Cardo;
+  -webkit-animation: appear 800ms ease forwards;
+  animation-delay: 1200ms;
 }
-
 .rectangle {
   display: inline-block;
   width: 11px;
@@ -40,20 +53,46 @@
   background-color: #179a9c;
   margin-right: 18px;
 }
-
+@-webkit-keyframes flicker1 {
+  0% { opacity: 0; }
+  3% { opacity: 0; }
+  9s% { opacity: .5; }
+  12% { opacity: 0; }
+  15% { opacity: .5; }
+  19% { opacity: 0; }
+  22% { opacity: .5; }
+  100% { opacity: 1; }
+}
+@-webkit-keyframes flicker2 {
+  0% { opacity: 0; }
+  3% { opacity: 0; }
+  5% { opacity: .5; }
+  7% { opacity: 0; }
+  10% { opacity: .5; }
+  13% { opacity: 0; }
+  16% { opacity: .5; }
+  20% { opacity: 0; }
+  13% { opacity: .5; }
+  100% { opacity: 1; }
+}
+.rectangle1 {
+  -webkit-animation: flicker1 1.5s ease forwards;
+  animation-delay: 1800ms;
+}
+.rectangle2 {
+  -webkit-animation: flicker2 1.3s forwards;
+  animation-delay: 1800ms;
+}
 .title-rectangle {
   display: relative;
   margin-left: -45px;
 }
-
 li, .fa {
   color: #4f5555;
 }
-
 .track-padding {
   padding-left: 15px;
 }
-
 .video-wrapper {
   position: relative;
   padding-bottom: 56.25%;
@@ -61,7 +100,6 @@ li, .fa {
   padding-top: 25px;
   height: 0;
 }
-
 .video-wrapper iframe {
   position: absolute;
   top: 0;
@@ -69,7 +107,6 @@ li, .fa {
   width: 100%;
   height: 100%;
 }
-
 .fixed-container {
   position: fixed;
   padding-bottom: 80px;
@@ -78,6 +115,33 @@ li, .fa {
   right: 0;
   text-align: center;
   height: 20px;
+}
+.track , .album-title, .music-video {
+  -webkit-animation: appear 2s ease forwards;
+}
+.track01, .album-title {
+  animation-delay: 1400ms;
+}
+.track02, .music-video {
+  animation-delay: 1500ms;
+}
+.track03 {
+  animation-delay: 1600ms;
+}
+.track04 {
+  animation-delay: 1700ms;
+}
+.track05 {
+  animation-delay: 1800ms;
+}
+.track06 {
+  animation-delay: 1900ms;
+}
+.track07 {
+  animation-delay: 2000ms;
+}
+.track08 {
+  animation-delay: 2100ms;
 }
 
 /* Custom, iPhone Retina */
@@ -95,9 +159,11 @@ li, .fa {
     padding-top: 6px;
   }
   .petite-celine {
-    line-height: 67px;
     font-size: 4.209em;
-    top: 186px;
+    top: 172px;
+  }
+  .petite {
+    margin-bottom: -54px;
   }
   .album {
     margin-bottom: 40px;
@@ -116,7 +182,10 @@ li, .fa {
   .petite-celine {
     font-size: 5.61em;
     line-height: 90px;
-    top: 141px;
+    top: 129px;
+  }
+  .petite {
+    margin-bottom: -69px;
   }
   .title {
     font-size: 1.777em;
